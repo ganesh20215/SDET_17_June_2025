@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <groups>
+        <run>
+            <exclude name="smoke"/>
+        </run>
+    </groups>-->
+    <listeners>
+        <listener class-name="testng.failcases.IAnnotation"/>
+    </listeners>
+    <parameter name="username" value="standard_user"/>
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="browserName" value="firefox"/>
+    <test verbose="10" preserve-order="true" parallel="false" thread-count="3" name="D:/repo1/clone/TestFolder/Demo/Selenium_29_July_2025">
+        <classes>
+<!--            <class name="testng.basics.AnnotationsHierarchyExample"/>-->
+<!--            <class name="testng.basics.AnotherAnnotationExample"/>-->
+<!--            <class name="testng.basics.DependsOnGroupExample"/>-->
+<!--            <class name="testng.basics.NeedOfTestNG"/>-->
+<!--            <class name="testng.basics.InvocationCountExample"/>-->
+<!--            <class name="testng.basics.NeedOfTestNG"/>-->
+            <class name="testng.basics.PriorityExample"/>
+<!--            <class name="testng.assertion.HardAssertExample"/>-->
+<!--            <class name="testng.assertion.SoftAssertExample"/>-->
+<!--            <class name="testng.parameterization.ParameterizationDemoExample"/>-->
+        </classes>
+    </test>
+</suite>

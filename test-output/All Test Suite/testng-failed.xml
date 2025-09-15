@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="secret_sauce"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="username" value="standard_user"/>
+  <listeners>
+    <listener class-name="testng.failcases.IAnnotation"/>
+  </listeners>
+  <test thread-count="5" name="D:/repo1/clone/TestFolder/Demo/Selenium_29_July_2025(failed)">
+    <classes>
+      <class name="testng.basics.PriorityExample">
+        <methods>
+          <include name="testCaseZ"/>
+        </methods>
+      </class> <!-- testng.basics.PriorityExample -->
+    </classes>
+  </test> <!-- D:/repo1/clone/TestFolder/Demo/Selenium_29_July_2025(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
