@@ -14,7 +14,6 @@ public class GetRequest {
 
     @Test
     public void verifyGetMethod(){
-        System.out.println("Request for Get");
         SoftAssert sf = new SoftAssert();
         RestAssured.baseURI = "https://reqres.in/api/users";
         Response response = RestAssured.given()
@@ -31,7 +30,7 @@ public class GetRequest {
         sf.assertEquals(response.jsonPath().getString("data.email"), "janet.weaver@reqres.in");
         sf.assertEquals(response.jsonPath().getString("data.first_name"), "Janet");
         sf.assertEquals(response.jsonPath().getString("data.last_name"), "Weaver");
-
+        sf.assertAll();
     }
 
 }

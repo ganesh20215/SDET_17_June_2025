@@ -12,6 +12,7 @@ public class PostRequest {
 
     @Test
     public void verifyPostAPIWithValidData(){
+        System.out.println("Hello New Generation....");
         SoftAssert sf = new SoftAssert();
         RestAssured.baseURI = "https://reqres.in/api/users";
         JSONObject obj = new JSONObject();
