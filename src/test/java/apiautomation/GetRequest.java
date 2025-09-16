@@ -14,6 +14,7 @@ public class GetRequest {
 
     @Test
     public void verifyGetMethod(){
+        System.out.println("Hello People..");
         SoftAssert sf = new SoftAssert();
         RestAssured.baseURI = "https://reqres.in/api/users";
         Response response = RestAssured.given()

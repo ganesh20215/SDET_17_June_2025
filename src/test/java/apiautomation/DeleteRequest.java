@@ -11,6 +11,7 @@ public class DeleteRequest {
 
     @Test
     public void verifyDeleteAPIWithValidData(){
+        System.out.println("Hello Test");
         SoftAssert sf = new SoftAssert();
         RestAssured.baseURI = "https://reqres.in/api/users/2";
         RestAssured
