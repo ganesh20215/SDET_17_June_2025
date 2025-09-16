@@ -23,5 +23,6 @@ public class DeleteRequest {
                 .then().log().all()
                 .statusCode(HttpStatus.SC_NO_CONTENT)
                 .extract().response();
+        sf.assertAll();
     }
 }
