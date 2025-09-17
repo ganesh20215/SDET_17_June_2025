@@ -12,7 +12,6 @@ public class CookiesHandleExample {
 
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://www.tcs.com/");
-        driver.manage().window().maximize();
 
         //Add Own cookie
         Cookie ac = new Cookie("Name", "Riddhi");
@@ -47,3 +46,4 @@ public class CookiesHandleExample {
         driver.close();
     }
 }
+
