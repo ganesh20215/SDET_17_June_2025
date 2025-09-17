@@ -11,7 +11,6 @@ public class ClickAndHoldExample {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://selenium08.blogspot.com/2020/01/click-and-hold.html");
-        driver.manage().window().maximize();
 
         WebElement elementA = driver.findElement(By.xpath("//li[text()='A']"));
 
@@ -23,3 +22,4 @@ public class ClickAndHoldExample {
                 .perform();
     }
 }
+
